@@ -13,7 +13,18 @@ console.log(v.make)
 
 //TO DO: Code the Car subclass here or in index.js file, i.e. class Car extends Vehicle ...
 
-
+class car extends VehicleModule {
+    constructor(make, model,year,color,mileage){
+        super(make,model, year,color,mileage)
+        this.maxPassengers = 5;
+        this.pasenger = 0;
+        this.numberOfWheels = 4;
+        this.maximumSpeed = 160;
+        this.fuel = 10;
+        this.scheduleService = false;
+    }
+   
+}
 
 
 
@@ -33,3 +44,28 @@ console.log(v.make)
 
 
 //Create at least two new instances of the Car class and test them here:
+Start(){
+    if(this.fuel > 0){
+        console.log("engine on");
+    return this.started = true
+    } else {
+        console.log("no fuel");
+        return this.started = false;
+    }
+}
+passengersOn() {
+    if(this.passenger < this.maxPassengers){
+        if ((num + this.passenger) <= this.maxPassengers) {
+            this.passenger = num;
+            return this.passenger;   
+    }
+} else {
+    console.log(this.model + " " + this.make + " not have enough space to take all passengers.");
+
+            }
+        } else {
+            console.log(this.model + " " + this.make + " is full");
+        }
+    
+
+
